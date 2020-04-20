@@ -1,19 +1,21 @@
 import React from "react";
-import axios from "axios";
+import axios from "../../../../axiosConfig";
+
+import Button from "../../../shared/Button";
 
 export const Logout = (props) => {
 
     const onLogout = () => {
 
-        axios.post(process.env.REACT_APP_API_URL + "users/logout").then(() => {
+        axios.get(process.env.REACT_APP_API_URL + "users/logout").then(() => {
             localStorage.removeItem("token");
             props.setLoginStatus(false);
         });
     }
 
     return (
-        <button onClick={onLogout}>
+        <Button onClick={onLogout}>
             Logout
-        </button>
+        </Button>
     )
 }

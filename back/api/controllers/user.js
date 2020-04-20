@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-const User = mongoose.model("Users");
+const User = require("../models/user");
 const path = require("path");
 const fs = require("fs");
 const jwt = require("jsonwebtoken");
@@ -62,7 +61,15 @@ exports.logout = async (req, res) => {
         });
 
         await req.user.save();
-        res.status(200).send(req.user);
+        res.status(200).send({loggedOut: true});
+    } catch ( e ) {
+        res.status(400).send(e);
+    }
+}
+
+exports.getUsername = async (req, res) => {
+    try {
+        res.status(200).send({username: req.user.username})
     } catch ( e ) {
         res.status(400).send(e);
     }
