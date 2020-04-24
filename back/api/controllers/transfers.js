@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const Expense = mongoose.model("Expense");
-const Income = mongoose.model("Income");
+const Expense = require("../models/expense");
+const Income = require("../models/income");
 
 exports.addTransfer = async (type, req) => {
     let Transfer;
@@ -26,10 +26,12 @@ exports.getAllMonthTransfersWithType = async (type, req) => {
         Transfer = Expense;
     }
 
+    // return req;
+
     return await Transfer.find( {
-        userId: req.body.user._id,
+        userId: req.user._id,
         "$where": function () {
-            return this.createdAt.getMonth() === req.body.date.getMonth() && this.createdAt.getFullYear() === req.body.date.getFullYear();
+            return this.createdDate.getMonth() === req.body.date.getMonth() && this.createdDate.getFullYear() === req.body.date.getFullYear();
         }
     } );
 }

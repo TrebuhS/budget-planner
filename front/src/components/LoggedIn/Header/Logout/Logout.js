@@ -2,6 +2,7 @@ import React from "react";
 import axios from "../../../../axiosConfig";
 
 import Button from "../../../shared/Button";
+import {variables} from "../../../shared/Vars";
 
 export const Logout = (props) => {
 
@@ -14,8 +15,8 @@ export const Logout = (props) => {
     }
 
     return (
-        <Button onClick={onLogout}>
-            Logout
+        <Button color={variables.primary} bgColor={variables.lightGray1} onClick={onLogout}>
+            LOGOUT
         </Button>
     )
 }

@@ -10,11 +10,11 @@ const IncomeSchema = new mongoose.Schema({
         required: true,
         ref: "User"
     },
-    createdAt: {
+    createdDate: {
         type: Date,
-        default: Date.now()
+        default: Date.now
     }
 })
 
-const Expense = mongoose.model("Income", IncomeSchema);
-module.exports = Expense;
+const Income = mongoose.model("Income", IncomeSchema);
+module.exports = Income;

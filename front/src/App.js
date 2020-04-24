@@ -6,9 +6,12 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+
 import { LoginForm } from "./components/LoginForm/LoginForm";
 import { LoggedIn } from "./components/LoggedIn/LoggedIn";
+
 import styled from "styled-components";
+import {variables} from "./components/shared/Vars";
 
 
 const AppDiv = styled.div`
@@ -17,6 +20,7 @@ const AppDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ${variables.lightGray1};
 `
 
 function App() {

@@ -6,7 +6,6 @@ const fs = require("fs");
 module.exports = async (req, res, next) => {
     try {
         const token = req.headers.authorization.replace("Bearer", "").trim();
-        // res.send(token);
         const publicKey = fs.readFileSync(path.join(__dirname + "../../../environments/public.key"));
         const decoded = jwt.verify(token, publicKey, {algorithm: "RS256" });
 

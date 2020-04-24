@@ -14,9 +14,9 @@ const ExpenseSchema = new mongoose.Schema({
         required: true,
         ref: "User"
     },
-    createdAt: {
+    createdDate: {
         type: Date,
-        default: Date.now()
+        default: Date.now
     }
 })
 

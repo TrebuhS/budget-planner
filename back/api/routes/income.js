@@ -9,9 +9,12 @@ router.post("/transfers/income/add", auth, (req, res) => {
             res.status(200).send(income)
         })
 });
-router.get("/transfers/income/list", auth, (req, res) => {
+router.post("/transfers/income/list", auth, (req, res) => {
+    // res.send(req);
     transferController.getAllMonthTransfersWithType("i", req)
         .then(incomes => {
             res.status(200).send(incomes);
         })
 });
+
+module.exports = router;

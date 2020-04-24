@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export default styled.input`
-  border: 1px solid black;
-  padding: 5px;
+  border: none;
+  padding: 5px 10px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 100px;
   box-shadow: none;
 `;
