@@ -7,7 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import { LoginForm } from "./components/LoginForm/LoginForm";
+import { ActionForm } from "./components/ActionForm/ActionForm";
 import { LoggedIn } from "./components/LoggedIn/LoggedIn";
 
 import styled from "styled-components";
@@ -50,6 +50,13 @@ function App() {
           localStorage.setItem("token", res.data);
           setLoginStatus(true);
         })
+  };
+
+  const register = (username, password) => {
+      axios.post("users/add", {username, password})
+          .then(res => {
+              console.log(res);
+          })
   }
 
   useEffect(() => {
@@ -81,7 +88,10 @@ function App() {
           }
           <Switch>
             <Route path="/login">
-                <LoginForm onSubmit={login} />
+                <ActionForm title="Home Budget Planner" actionName="Sign in" redirectUrl="/register" redirect="No account? Sign up!" onSubmit={login} />
+            </Route>
+              <Route path="/register">
+                <ActionForm title="Register" actionName="Sign up" redirectUrl="/login" redirect="Have an account? Sign in!" onSubmit={register} />
             </Route>
             <Route path="/">
               <LoggedIn setLoginStatus={setLoginStatus} />

@@ -19,12 +19,12 @@ const Amount = styled.p`
   color: ${variables.red};
 `
 
-export const Category = (props) => {
+export const Expense = ( props) => {
 
     return (
         <Wrapper>
-            <p>xd</p>
-            <Amount>-$200</Amount>
+            <p>{props.name[0].toUpperCase() + props.name.slice(1)}</p>
+            <Amount>-${props.amount}</Amount>
         </Wrapper>
     )
 }

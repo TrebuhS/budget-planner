@@ -10,7 +10,6 @@ const Base = styled.div`
 `;
 
 const TransfersSum = styled.div`
-  //width: 200px;
   padding: 10px 35px;
   background-color: ${props => props.type === "e" ? variables.red : variables.green };
   border-radius: 200px;

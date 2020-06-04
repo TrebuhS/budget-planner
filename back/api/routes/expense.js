@@ -9,14 +9,6 @@ router.post("/transfers/expense/add", auth, (req, res) => {
             res.status(200).send(expense)
         })
 });
-router.post("/transfers/expense/list", auth, (req, res) => {
-    transferController.getAllMonthTransfersWithType("e", req)
-        .then(expense => {
-            res.status(200).send(expense);
-        })
-        .catch(e => {
-            res.status(400).send(e);
-        })
-});
+router.post("/transfers/expense/list", auth, transferController.getSortedExpenses);
 
 module.exports = router;

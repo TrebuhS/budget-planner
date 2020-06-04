@@ -25,20 +25,23 @@ const FormatedDate = styled.span`
 `
 
 export const DateInfo = (props) => {
-    const [month, setMonth] = useState(props.date.toLocaleString('default', { month: 'long' }));
-    const [year, setYear] = useState(props.date.getFullYear());
+    const [month, setMonth] = useState(new Date(props.date.year, props.date.month, 1).toLocaleString('default', { month: 'long' }));
+    const [year, setYear] = useState(props.date.year);
 
     const changeDate = (direction) => {
-        let date = props.date;
+        let date = new Date(props.date.year, props.date.month, 1);
         if (direction === "prev") {
             date.setMonth(date.getMonth() - 1);
         } else {
             date.setMonth(date.getMonth() + 1);
         }
 
-        setMonth(props.date.toLocaleString('default', { month: 'long' }));
-        setYear(props.date.getFullYear());
-        props.setDate(date);
+        setMonth(date.toLocaleString('default', { month: 'long' }));
+        setYear(date.getFullYear());
+        props.setDate({
+            year: date.getFullYear(),
+            month: date.getMonth()
+        });
     }
 
     return (

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0003ea9-f807-4014-a3cd-b5da63c9e046" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/front.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/api/controllers/transfers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/api/controllers/transfers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/api/routes/expense.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/api/routes/expense.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../back/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Balance/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Balance/Balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Category/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Expense/Expense.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Date/DateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Date/DateInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/MonthlyStatistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/MonthlyStatistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/TransfersActions/TransfersActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/TransfersActions/TransfersActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionForm/ActionForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Input.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1cifQOKWOEJ4JSn2T77UNMT6EHm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0003ea9-f807-4014-a3cd-b5da63c9e046" name="Default Changelist" comment="" />
+      <created>1591016317139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591016317139</updated>
+      <workItem from="1591016318220" duration="18833000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
