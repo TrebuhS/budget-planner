@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { ChangeMonthArrow } from "./changeMonthArrow/ChangeMonthArrow";
-import { variables } from "../../../../shared/Vars";
+import { variables } from "../../../shared/Vars";
 
 const Base = styled.div`
   display: flex;

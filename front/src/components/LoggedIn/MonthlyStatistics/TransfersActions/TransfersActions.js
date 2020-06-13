@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import {variables} from "../../../../shared/Vars";
-import axios from "../../../../../axiosConfig";
+import {variables} from "../../../shared/Vars";
+import axios from "../../../../axiosConfig";
 
-import Button from "../../../../shared/Button";
-import Input from "../../../../shared/Input";
+import Button from "../../../shared/Button";
+import Input from "../../../shared/Input";
+import Plus from "../../../../Icons/Plus";
+import {default as CloseSvg} from "../../../../Icons/Close";
 
 const Open = styled.div`
   position: absolute;
@@ -13,6 +15,7 @@ const Open = styled.div`
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,12 +128,16 @@ export const TransfersActions = (props) => {
     }, []);
 
     const addTransfer = () => {
-        setFormActive(false);
-        console.log("Form Data: ", formData);
-        axios.post(`/transfers/${formType === "i" ? "income" : "expense"}/add`, formData).then((res) => {
-            console.log("Yey!", res);
-            props.refreshExpenses();
-        })
+        if (formData.amount) {
+            setFormActive(false);
+            axios.post(`/transfers/${formType === "i" ? "income" : "expense"}/add`, formData).then((res) => {
+                props.refreshExpenses();
+                props.refreshTotalBalance();
+                dataToForm({amount: null});
+            })
+        } else {
+
+        }
     }
 
     const dataToForm = (updateValue) => {
@@ -156,7 +163,7 @@ export const TransfersActions = (props) => {
         return (
             <Wrapper type={formType}>
                 <Close onClick={onChangeFormActive}>
-                    X
+                    <CloseSvg width="30px" fill={variables.lightGray1} />
                 </Close>
                 <Form type={formType}>
                     <Step>1. Choose what type of transfer you want to add.</Step>
@@ -201,7 +208,7 @@ export const TransfersActions = (props) => {
                                     { categories }
                                 </Select>
                                 <Step>5. Confirm your action</Step>
-                                <Confirm type="button" onClick={addTransfer}>Confirm</Confirm>
+                                <Confirm type="submit" onClick={addTransfer}>Confirm</Confirm>
                             </div>
                         )
                     }
@@ -213,7 +220,7 @@ export const TransfersActions = (props) => {
     return (
         <div>
             <Open onClick={onChangeFormActive}>
-                +
+                <Plus fill={variables.lightGray1} />
             </Open>
             { isFormActive ?
                 getForm() :

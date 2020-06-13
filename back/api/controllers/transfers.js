@@ -19,14 +19,13 @@ exports.addTransfer = async (type, req) => {
     return newTransfer;
 }
 
-getAllMonthTransfersWithType = async (type, date, userId) => {
+exports.getAllMonthTransfersWithType = async (type, date, userId) => {
     let Transfer;
     if (type === "i") {
         Transfer = Income;
     } else {
         Transfer = Expense;
     }
-
     const lastDay = new Date(date.year, date.month - 1, 0).getDate();
     const from = new Date(date.year, date.month - 1, 2);
     const to = new Date(date.year, date.month - 1, lastDay);
@@ -41,7 +40,7 @@ getAllMonthTransfersWithType = async (type, date, userId) => {
 
 exports.getSortedExpenses = async (req, res) => {
     try {
-        const expenses = await getAllMonthTransfersWithType("e", {year: req.body.year, month: req.body.month}, req.user._id);
+        const expenses = await this.getAllMonthTransfersWithType("e", {year: req.body.year, month: req.body.month}, req.user._id);
         const sorted = {};
         expenses.forEach(expense => {
             if (sorted[expense.category]) {
@@ -54,7 +53,7 @@ exports.getSortedExpenses = async (req, res) => {
     } catch ( e ) {
         res.status(400).send(e);
     }
-}
+};
 
 // exports.addTransferRoute = async (req, res, type) => {
 //     try {

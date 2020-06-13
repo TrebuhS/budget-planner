@@ -19,7 +19,7 @@ app.use(function(req, res, next) {
 });
 
 app.use(userRoutes);
-// app.use(balanceRoutes);
+app.use(balanceRoutes);
 app.use(incomeRoutes);
 app.use(expenseRoutes);
 app.use(categoriesRoutes);

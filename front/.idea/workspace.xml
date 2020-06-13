@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0003ea9-f807-4014-a3cd-b5da63c9e046" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/front.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoggedIn/MonthlyStatistics/Balance/Balance.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../back/api/controllers/transfers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/api/controllers/transfers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/api/routes/expense.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/api/routes/expense.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../back/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/api/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/api/controllers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/api/helpers/balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/api/helpers/balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/api/routes/balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/api/routes/balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Balance/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Balance/Balance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Category/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Expense/Expense.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Date/DateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Date/DateInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/MonthlyStatistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/MonthlyStatistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/TransfersActions/TransfersActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/TransfersActions/TransfersActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionForm/ActionForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ActionForm/ActionForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionForm/ActionForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/LoggedIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/LoggedIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Balance/Balance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Date/DateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/MonthlyStatistics/Date/DateInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Date/changeMonthArrow/ChangeMonthArrow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/MonthlyStatistics/Date/changeMonthArrow/ChangeMonthArrow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/Expense/Expense.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/MonthlyStatistics/Expense/Expense.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/MonthlyStatistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/MonthlyStatistics/MonthlyStatistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/MonthlyStatistics/TransfersActions/TransfersActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedIn/MonthlyStatistics/TransfersActions/TransfersActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedIn/Main/addIncome/addIncome.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +52,14 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/LoggedIn" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -67,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591016317139</updated>
-      <workItem from="1591016318220" duration="18833000" />
+      <workItem from="1591016318220" duration="32074000" />
     </task>
     <servers />
   </component>

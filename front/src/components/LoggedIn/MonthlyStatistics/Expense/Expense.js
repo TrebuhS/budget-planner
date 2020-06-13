@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {variables} from "../../../../shared/Vars";
+import {variables} from "../../../shared/Vars";
 
 const Wrapper = styled.div`
   //width: 100%;

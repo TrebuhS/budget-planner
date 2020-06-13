@@ -25,6 +25,7 @@ const AppDiv = styled.div`
 
 function App() {
   const [loginStatus, setLoginStatus] = useState(false);
+  const [loginError, setLoginError] = useState(null);
 
   const checkIfLoggedIn = () => {
     if (localStorage.getItem("token")) {
@@ -50,12 +51,22 @@ function App() {
           localStorage.setItem("token", res.data);
           setLoginStatus(true);
         })
+        .catch(e => {
+            if (e.response.status === 401) {
+                setLoginError("Wrong username or password.");
+            }
+        })
   };
 
   const register = (username, password) => {
       axios.post("users/add", {username, password})
           .then(res => {
               console.log(res);
+          })
+          .catch(e => {
+              if (e.response) {
+                  setLoginError("Wrong username or password.");
+              }
           })
   }
 
@@ -88,10 +99,10 @@ function App() {
           }
           <Switch>
             <Route path="/login">
-                <ActionForm title="Home Budget Planner" actionName="Sign in" redirectUrl="/register" redirect="No account? Sign up!" onSubmit={login} />
+                <ActionForm loginError={loginError} title="Home Budget Planner" actionName="Sign in" redirectUrl="/register" redirect="No account? Sign up!" onSubmit={login} />
             </Route>
               <Route path="/register">
-                <ActionForm title="Register" actionName="Sign up" redirectUrl="/login" redirect="Have an account? Sign in!" onSubmit={register} />
+                <ActionForm loginError={loginError} title="Register" actionName="Sign up" redirectUrl="/login" redirect="Have an account? Sign in!" onSubmit={register} />
             </Route>
             <Route path="/">
               <LoggedIn setLoginStatus={setLoginStatus} />

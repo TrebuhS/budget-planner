@@ -3,4 +3,7 @@ const router = new express.Router();
 const balanceHelper = require("../helpers/balance");
 const auth = require("../middleware/auth");
 
-// router.post("/transfers/expense/add", auth, balanceHelper.getMonthlyBalance)
+router.post("/balance/monthly", auth, balanceHelper.getMonthlyBalance);
+router.get("/balance/total", auth, balanceHelper.getTotalBalance);
+
+module.exports = router;

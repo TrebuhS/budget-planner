@@ -31,6 +31,12 @@ const SignUpRedirect = styled.p`
   margin-top: 5px;
 `;
 
+const ErrorMessage = styled.p`
+  font-size: 13px;
+  font-weight: bold;
+  color: red;
+`;
+
 export const ActionForm = ( props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -43,6 +49,7 @@ export const ActionForm = ( props) => {
                 <Input placeholder="username" type="text" onChange={e => setUsername(e.target.value)} />
                 <Input placeholder="password" type="password" onChange={e => setPassword(e.target.value)} />
                 <Button onClick={() => props.onSubmit(username, password)}>{props.actionName}</Button>
+                <ErrorMessage>{props.loginError}</ErrorMessage>
                 <Link to={props.redirectUrl}>
                     <SignUpRedirect>{props.redirect}</SignUpRedirect>
                 </Link>

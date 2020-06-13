@@ -20,7 +20,7 @@ exports.addUser = async ( req, res ) => {
 
         res.status( 200 ).send( {user, token} );
     } catch ( e ) {
-        res.status( 400 ).send( e );
+        res.status( 400 ).send( "wrong data" );
     }
 }
 
@@ -30,7 +30,7 @@ exports.login = async (req, res) => {
         const token = await user.newAuthToken();
         res.status(200).send(token);
     } catch ( e ) {
-        res.status(400).send(e);
+        res.status(401).send("bad credentials");
     }
 }
 
